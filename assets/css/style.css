@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  padding: 0;
   background-color: #fffdd0;
   font-size: 20px;
   font-family: "Lato", sans-serif;
@@ -102,3 +101,65 @@ nav {
   }
 }
 /*** mobile responsive end ***/
+
+/*** main start ***/
+.container {
+  text-align: center;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/hero.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(211, 211, 211, 0.55);
+}
+
+.hero-content {
+  position: relative;
+  color: #4b3832;
+}
+
+.hero-content h1 {
+  font-family: "Merriweather", serif;
+  font-size: 3rem;
+}
+
+.hero-content p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.7rem;
+  color: #4b3832;
+  font-weight: 600;
+  text-shadow: 1px 1px 1px #fffdd0;
+  padding-bottom: 1rem;
+}
+
+.hero-content .btn {
+  background-color: #e2725b;
+  color: #fffdd0;
+  padding: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.hero-content .btn:hover {
+  background-color: #6699cc;
+  color: #ffd700;
+}
+
+/*** main end ***/
