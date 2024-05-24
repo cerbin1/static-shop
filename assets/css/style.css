@@ -13,6 +13,7 @@ h6 {
   font-size: 1rem;
   background-color: #e2725b;
   color: #fffdd0;
+  cursor: pointer;
   padding: 1rem;
   border-radius: 5px;
   text-decoration: none;
@@ -87,7 +88,7 @@ nav {
   color: #4b3832;
   border: none;
   font-size: inherit;
-  padding: 0.5rem 0;
+  padding: 0.5rem;
   border-radius: 5px;
   background-color: #fffdd0;
 }
@@ -185,14 +186,14 @@ nav {
   color: #e2725b;
 }
 
-.home-about-us {
+.home-section {
   max-width: 50%;
   padding: 1rem;
-  margin: 2rem auto;
+  margin: 4rem auto;
   border-top: 2px solid #d3d3d3;
 }
 
-.home-about-us p {
+.home-section-padding {
   font-size: 1.5rem;
   color: #808000;
   line-height: 2.5rem;
@@ -201,4 +202,21 @@ nav {
 .home-about-us strong {
   color: #4b3832;
 }
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup-form input[type="email"] {
+  padding: 1rem;
+  margin: 1rem;
+  font-size: inherit;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  min-width: 40%;
+  color: inherit;
+}
+
 /*** main end ***/
