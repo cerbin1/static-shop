@@ -41,4 +41,8 @@
   .products-grid {
     flex-direction: column;
   }
+
+  .home-about-us {
+    max-width: 100%;
+  }
 }
