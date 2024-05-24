@@ -45,4 +45,9 @@
   .home-section {
     max-width: 100%;
   }
+
+  .footer-container {
+    flex-direction: column;
+    max-width: 100%;
+  }
 }
