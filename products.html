@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crafted Treasures - Products</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive-style.css" />
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+    <link rel="stylesheet" href="assets/css/icons.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-logo">Crafted Treasures</div>
+      <div class="nav-navbar">
+        <a href="index.html#hero">Home</a>
+        <a href="#hero">Products</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+        <a href="#">FAQ</a>
+        <div class="navbar-cart">
+          <span class="navbar-cart-text">Go to cart</span>
+          <i class="gg-shopping-cart"></i>
+        </div>
+        <div class="navbar-search-bar">
+          <input
+            class="search-bar"
+            placeholder="Search for products"
+            type="text"
+          />
+          <i class="fa fa-search"></i>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container">
+      <header id="hero" class="hero hero-products-img">
+        <div class="hero-content">
+          <h1>Our Handmade Collections</h1>
+          <a href="#products" class="btn">Browse</a>
+        </div>
+      </header>
+
+      <section id="products" class="products-container">
+        <aside class="sidebar">
+          <h2>Categories</h2>
+          <ul class="category-links">
+            <li>
+              <a onclick="imitateCategoryClicking('category-jewelry')"
+                >Jewelry</a
+              >
+            </li>
+            <li>
+              <a onclick="imitateCategoryClicking('category-pottery')"
+                >Pottery</a
+              >
+            </li>
+            <li>
+              <a onclick="imitateCategoryClicking('category-candles')"
+                >Candles</a
+              >
+            </li>
+            <li>
+              <a onclick="imitateCategoryClicking('category-knitting')"
+                >Knitted Goods</a
+              >
+            </li>
+            <li>
+              <a onclick="imitateCategoryClicking('category-paintings')"
+                >Paintings</a
+              >
+            </li>
+            <li>
+              <a onclick="imitateCategoryClicking('category-other')"
+                >Other Goods</a
+              >
+            </li>
+          </ul>
+        </aside>
+        <div class="product-grid">
+          <div class="filter-sort">
+            <select name="sort" id="sort">
+              <option value="popularity">Sort by Popularity</option>
+              <option value="price-low-high">Sort by Price: Low to High</option>
+              <option value="price-high-low">Sort by Price: High to Low</option>
+              <option value="new-arrivals">Sort by New Arrivals</option>
+            </select>
+          </div>
+          <div id="category-jewelry" class="product-card category-jewelry">
+            <img
+              src="assets/images/feature-product-1.jpg"
+              alt="Handmade Necklace"
+            />
+            <h3>Handmade Necklace</h3>
+            <p>
+              A beautiful handcrafted necklace made from high-quality beads and
+              stones.
+            </p>
+            <p>$25.00</p>
+            <a class="btn">Add to Cart</a>
+          </div>
+          <div class="product-card category-jewelry">
+            <img
+              src="assets/images/feature-product-1.jpg"
+              alt="Handmade Necklace"
+            />
+            <h3>Handmade Necklace</h3>
+            <p>
+              A beautiful handcrafted necklace made from high-quality beads and
+              stones.
+            </p>
+            <p>$25.00</p>
+            <a class="btn">Add to Cart</a>
+          </div>
+          <div class="product-card category-jewelry">
+            <img
+              src="assets/images/feature-product-1.jpg"
+              alt="Handmade Necklace"
+            />
+            <h3>Handmade Necklace</h3>
+            <p>
+              A beautiful handcrafted necklace made from high-quality beads and
+              stones.
+            </p>
+            <p>$25.00</p>
+            <a class="btn">Add to Cart</a>
+          </div>
+          <div class="product-card category-jewelry">
+            <img
+              src="assets/images/feature-product-1.jpg"
+              alt="Handmade Necklace"
+            />
+            <h3>Handmade Necklace</h3>
+            <p>
+              A beautiful handcrafted necklace made from high-quality beads and
+              stones.
+            </p>
+            <p>$25.00</p>
+            <a class="btn">Add to Cart</a>
+          </div>
+          <div class="product-card category-jewelry">
+            <img
+              src="assets/images/feature-product-1.jpg"
+              alt="Handmade Necklace"
+            />
+            <h3>Handmade Necklace</h3>
+            <p>
+              A beautiful handcrafted necklace made from high-quality beads and
+              stones.
+            </p>
+            <p>$25.00</p>
+            <a class="btn">Add to Cart</a>
+          </div>
+          <div class="product-card category-jewelry">
+            <img
+              src="assets/images/feature-product-1.jpg"
+              alt="Handmade Necklace"
+            />
+            <h3>Handmade Necklace</h3>
+            <p>
+              A beautiful handcrafted necklace made from high-quality beads and
+              stones.
+            </p>
+            <p>$25.00</p>
+            <a class="btn">Add to Cart</a>
+          </div>
+
+          <div
+            id="category-pottery"
+            class="product-card category-pottery inactive"
+          >
+            <img
+              src="assets/images/feature-product-2.jpg"
+              alt="Handcrafted Ceramic Bowl"
+            />
+            <h3>Handcrafted Ceramic Bowl</h3>
+            <p>
+              A beautifully crafted ceramic bowl, perfect for serving salads or
+              as a decorative piece.
+            </p>
+            <p>$40</p>
+            <a class="btn">Add to Cart</a>
+          </div>
+          <div class="product-card category-pottery inactive">
+            <img
+              src="assets/images/feature-product-2.jpg"
+              alt="Handcrafted Ceramic Bowl"
+            />
+            <h3>Handcrafted Ceramic Bowl</h3>
+            <p>
+              A beautifully crafted ceramic bowl, perfect for serving salads or
+              as a decorative piece.
+            </p>
+            <p>$40</p>
+            <a class="btn">Add to Cart</a>
+          </div>
+          <div class="product-card category-pottery inactive">
+            <img
+              src="assets/images/feature-product-2.jpg"
+              alt="Handcrafted Ceramic Bowl"
+            />
+            <h3>Handcrafted Ceramic Bowl</h3>
+            <p>
+              A beautifully crafted ceramic bowl, perfect for serving salads or
+              as a decorative piece.
+            </p>
+            <p>$40</p>
+            <a class="btn">Add to Cart</a>
+          </div>
+          <div class="product-card category-pottery inactive">
+            <img
+              src="assets/images/feature-product-2.jpg"
+              alt="Handcrafted Ceramic Bowl"
+            />
+            <h3>Handcrafted Ceramic Bowl</h3>
+            <p>
+              A beautifully crafted ceramic bowl, perfect for serving salads or
+              as a decorative piece.
+            </p>
+            <p>$40</p>
+            <a class="btn">Add to Cart</a>
+          </div>
+          <div class="product-card category-pottery inactive">
+            <img
+              src="assets/images/feature-product-2.jpg"
+              alt="Handcrafted Ceramic Bowl"
+            />
+            <h3>Handcrafted Ceramic Bowl</h3>
+            <p>
+              A beautifully crafted ceramic bowl, perfect for serving salads or
+              as a decorative piece.
+            </p>
+            <p>$40</p>
+            <a class="btn">Add to Cart</a>
+          </div>
+          <div class="product-card category-pottery inactive">
+            <img
+              src="assets/images/feature-product-2.jpg"
+              alt="Handcrafted Ceramic Bowl"
+            />
+            <h3>Handcrafted Ceramic Bowl</h3>
+            <p>
+              A beautifully crafted ceramic bowl, perfect for serving salads or
+              as a decorative piece.
+            </p>
+            <p>$40</p>
+            <a class="btn">Add to Cart</a>
+          </div>
+
+          <div
+            id="category-candles"
+            class="product-card category-candles inactive"
+          >
+            <img
+              src="assets/images/feature-product-3.jpg"
+              alt="Handmade Necklace"
+            />
+            <h3>Handmade Necklace</h3>
+            <p>
+              Hand-poured candle with a soothing lavender aroma, perfect for
+              relaxation.
+            </p>
+            <p>$40</p>
+            <a class="btn">Add to Cart</a>
+          </div>
+          <div class="product-card category-candles inactive">
+            <img
+              src="assets/images/feature-product-3.jpg"
+              alt="Handmade Necklace"
+            />
+            <h3>Handmade Necklace</h3>
+            <p>
+              Hand-poured candle with a soothing lavender aroma, perfect for
+              relaxation.
+            </p>
+            <p>$40</p>
+            <a class="btn">Add to Cart</a>
+          </div>
+          <div class="product-card category-candles inactive">
+            <img
+              src="assets/images/feature-product-3.jpg"
+              alt="Handmade Necklace"
+            />
+            <h3>Handmade Necklace</h3>
+            <p>
+              Hand-poured candle with a soothing lavender aroma, perfect for
+              relaxation.
+            </p>
+            <p>$40</p>
+            <a class="btn">Add to Cart</a>
+          </div>
+          <div class="product-card category-candles inactive">
+            <img
+              src="assets/images/feature-product-3.jpg"
+              alt="Handmade Necklace"
+            />
+            <h3>Handmade Necklace</h3>
+            <p>
+              Hand-poured candle with a soothing lavender aroma, perfect for
+              relaxation.
+            </p>
+            <p>$40</p>
+            <a class="btn">Add to Cart</a>
+          </div>
+          <div class="product-card category-candles inactive">
+            <img
+              src="assets/images/feature-product-3.jpg"
+              alt="Handmade Necklace"
+            />
+            <h3>Handmade Necklace</h3>
+            <p>
+              Hand-poured candle with a soothing lavender aroma, perfect for
+              relaxation.
+            </p>
+            <p>$40</p>
+            <a class="btn">Add to Cart</a>
+          </div>
+          <div class="product-card category-candles inactive">
+            <img
+              src="assets/images/feature-product-3.jpg"
+              alt="Handmade Necklace"
+            />
+            <h3>Handmade Necklace</h3>
+            <p>
+              Hand-poured candle with a soothing lavender aroma, perfect for
+              relaxation.
+            </p>
+            <p>$40</p>
+            <a class="btn">Add to Cart</a>
+          </div>
+
+          <div id="category-knitting" class="product-card category-knitting">
+            <img
+              src="assets/images/feature-product-1.jpg"
+              alt="Cozy Wool Scarf"
+            />
+            <h3>Cozy Wool Scarf</h3>
+            <p>
+              A warm and cozy scarf hand-knitted from the finest wool, perfect
+              for winter.
+            </p>
+            <p>$35.00</p>
+            <a class="btn">Add to Cart</a>
+          </div>
+          <div class="product-card category-knitting">
+            <img
+              src="assets/images/feature-product-1.jpg"
+              alt="Cozy Wool Scarf"
+            />
+            <h3>Cozy Wool Scarf</h3>
+            <p>
+              A warm and cozy scarf hand-knitted from the finest wool, perfect
+              for winter.
+            </p>
+            <p>$35.00</p>
+            <a class="btn">Add to Cart</a>
+          </div>
+          <div class="product-card category-knitting">
+            <img
+              src="assets/images/feature-product-1.jpg"
+              alt="Cozy Wool Scarf"
+            />
+            <h3>Cozy Wool Scarf</h3>
+            <p>
+              A warm and cozy scarf hand-knitted from the finest wool, perfect
+              for winter.
+            </p>
+            <p>$35.00</p>
+            <a class="btn">Add to Cart</a>
+          </div>
+          <div class="product-card category-knitting">
+            <img
+              src="assets/images/feature-product-1.jpg"
+              alt="Cozy Wool Scarf"
+            />
+            <h3>Cozy Wool Scarf</h3>
+            <p>
+              A warm and cozy scarf hand-knitted from the finest wool, perfect
+              for winter.
+            </p>
+            <p>$35.00</p>
+            <a class="btn">Add to Cart</a>
+          </div>
+          <div class="product-card category-knitting">
+            <img
+              src="assets/images/feature-product-1.jpg"
+              alt="Cozy Wool Scarf"
+            />
+            <h3>Cozy Wool Scarf</h3>
+            <p>
+              A warm and cozy scarf hand-knitted from the finest wool, perfect
+              for winter.
+            </p>
+            <p>$35.00</p>
+            <a class="btn">Add to Cart</a>
+          </div>
+          <div class="product-card category-knitting">
+            <img
+              src="assets/images/feature-product-1.jpg"
+              alt="Cozy Wool Scarf"
+            />
+            <h3>Cozy Wool Scarf</h3>
+            <p>
+              A warm and cozy scarf hand-knitted from the finest wool, perfect
+              for winter.
+            </p>
+            <p>$35.00</p>
+            <a class="btn">Add to Cart</a>
+          </div>
+
+          <div id="category-paintings" class="product-card category-paintings">
+            <img
+              src="assets/images/feature-product-1.jpg"
+              alt="Abstract Landscape Painting"
+            />
+            <h3>Abstract Landscape Painting</h3>
+            <p>
+              A vibrant abstract landscape painting, adding a splash of color to
+              any room.
+            </p>
+            <p>$150.00</p>
+            <a class="btn">Add to Cart</a>
+          </div>
+          <div class="product-card category-paintings">
+            <img
+              src="assets/images/feature-product-1.jpg"
+              alt="Cozy Wool Scarf"
+            />
+            <h3>Abstract Landscape Painting</h3>
+            <p>
+              A vibrant abstract landscape painting, adding a splash of color to
+              any room.
+            </p>
+            <p>$150.00</p>
+            <a class="btn">Add to Cart</a>
+          </div>
+          <div class="product-card category-paintings">
+            <img
+              src="assets/images/feature-product-1.jpg"
+              alt="Cozy Wool Scarf"
+            />
+            <h3>Abstract Landscape Painting</h3>
+            <p>
+              A vibrant abstract landscape painting, adding a splash of color to
+              any room.
+            </p>
+            <p>$150.00</p>
+            <a class="btn">Add to Cart</a>
+          </div>
+          <div class="product-card category-paintings">
+            <img
+              src="assets/images/feature-product-1.jpg"
+              alt="Cozy Wool Scarf"
+            />
+            <h3>Abstract Landscape Painting</h3>
+            <p>
+              A vibrant abstract landscape painting, adding a splash of color to
+              any room.
+            </p>
+            <p>$150.00</p>
+            <a class="btn">Add to Cart</a>
+          </div>
+          <div class="product-card category-paintings">
+            <img
+              src="assets/images/feature-product-1.jpg"
+              alt="Cozy Wool Scarf"
+            />
+            <h3>Abstract Landscape Painting</h3>
+            <p>
+              A vibrant abstract landscape painting, adding a splash of color to
+              any room.
+            </p>
+            <p>$150.00</p>
+            <a class="btn">Add to Cart</a>
+          </div>
+          <div class="product-card category-paintings">
+            <img
+              src="assets/images/feature-product-1.jpg"
+              alt="Cozy Wool Scarf"
+            />
+            <h3>Abstract Landscape Painting</h3>
+            <p>
+              A vibrant abstract landscape painting, adding a splash of color to
+              any room.
+            </p>
+            <p>$150.00</p>
+            <a class="btn">Add to Cart</a>
+          </div>
+
+          <div id="category-other" class="product-card category-other">
+            <img
+              src="assets/images/feature-product-1.jpg"
+              alt="Handcrafted Wooden Music Box"
+            />
+            <h3>Handcrafted Wooden Music Box</h3>
+            <p>
+              Crafted from high-quality wood, this music box features intricate
+              carvings and a smooth finish.
+            </p>
+            <p>$250</p>
+            <a class="btn">Add to Cart</a>
+          </div>
+          <div class="product-card category-other">
+            <img
+              src="assets/images/feature-product-1.jpg"
+              alt="Handcrafted Wooden Music Box"
+            />
+            <h3>Handcrafted Wooden Music Box</h3>
+            <p>
+              Crafted from high-quality wood, this music box features intricate
+              carvings and a smooth finish.
+            </p>
+            <p>$250</p>
+            <a class="btn">Add to Cart</a>
+          </div>
+          <div class="product-card category-other">
+            <img
+              src="assets/images/feature-product-1.jpg"
+              alt="Handcrafted Wooden Music Box"
+            />
+            <h3>Handcrafted Wooden Music Box</h3>
+            <p>
+              Crafted from high-quality wood, this music box features intricate
+              carvings and a smooth finish.
+            </p>
+            <p>$250</p>
+            <a class="btn">Add to Cart</a>
+          </div>
+          <div class="product-card category-other">
+            <img
+              src="assets/images/feature-product-1.jpg"
+              alt="Handcrafted Wooden Music Box"
+            />
+            <h3>Handcrafted Wooden Music Box</h3>
+            <p>
+              Crafted from high-quality wood, this music box features intricate
+              carvings and a smooth finish.
+            </p>
+            <p>$250</p>
+            <a class="btn">Add to Cart</a>
+          </div>
+          <div class="product-card category-other">
+            <img
+              src="assets/images/feature-product-1.jpg"
+              alt="Handcrafted Wooden Music Box"
+            />
+            <h3>Handcrafted Wooden Music Box</h3>
+            <p>
+              Crafted from high-quality wood, this music box features intricate
+              carvings and a smooth finish.
+            </p>
+            <p>$250</p>
+            <a class="btn">Add to Cart</a>
+          </div>
+          <div class="product-card category-other">
+            <img
+              src="assets/images/feature-product-1.jpg"
+              alt="Handcrafted Wooden Music Box"
+            />
+            <h3>Handcrafted Wooden Music Box</h3>
+            <p>
+              Crafted from high-quality wood, this music box features intricate
+              carvings and a smooth finish.
+            </p>
+            <p>$250</p>
+            <a class="btn">Add to Cart</a>
+          </div>
+
+          <div class="pagination">
+            <a href="#products">&laquo;</a>
+            <a href="#products" class="active">1</a>
+            <a href="#products">2</a>
+            <a href="#products">3</a>
+            <a href="#products">4</a>
+            <a href="#products">5</a>
+            <a href="#products">&raquo;</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer">
+        <div class="footer-container">
+          <article class="footer-column">
+            <h4>About Crafted Treasures</h4>
+            <p>
+              Crafted Treasures offers a curated collection of handmade jewelry,
+              pottery, candles, knitted goods, paintings, and other crafts. Each
+              piece is crafted with love by talented artisans.
+            </p>
+          </article>
+
+          <article class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html#hero">Home</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </article>
+          <article class="footer-column">
+            <h4>Follow Us</h4>
+            <ul class="social-icons">
+              <li>
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  class="fa fa-facebook"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  class="fa fa-instagram"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.twitter.com/"
+                  target="_blank"
+                  class="fa fa-twitter"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.pinterest.com/"
+                  target="_blank"
+                  class="fa fa-pinterest"
+                ></a>
+              </li>
+            </ul>
+          </article>
+          <article class="footer-column">
+            <h4>Contact Us</h4>
+            <p>Email: info@craftedtreasures.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: 123 Craft Lane, Handmade City, CA 98765</p>
+          </article>
+          <article class="footer-column">
+            <div class="footer-bottom">
+              <p>&copy; 2024 Crafted Treasures. All rights reserved.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      function imitateCategoryClicking(category) {
+        const products = document.querySelectorAll(".product-card");
+        products.forEach((product) => {
+          if (product.classList.contains(category)) {
+            product.classList.remove("inactive");
+          } else {
+            product.classList.add("inactive");
+          }
+        });
+        document.getElementById(category).scrollIntoView();
+      }
+    </script>
+  </body>
+</html>
