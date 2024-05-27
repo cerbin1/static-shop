@@ -605,3 +605,70 @@ nav {
 }
 
 /*** product details end ***/
+
+/*** about-us start ***/
+
+.about-us-hero {
+  background: url("../images/about-us-hero.jpg") no-repeat center center/cover;
+  color: white;
+  padding: 100px 0;
+}
+
+.about-us-hero h1 {
+  text-shadow: 2px 2px 4px #4b3832;
+  margin: 0;
+  font-size: 3.5rem;
+}
+.about-us-hero p {
+  text-shadow: 2px 2px 4px #4b3832;
+  font-size: 1.6rem;
+}
+
+.our-story {
+  padding: 4rem 0;
+}
+
+.meet-the-artisans {
+  background-color: #f4f4f4;
+  padding: 4rem 0;
+}
+
+.artisan-grid {
+  display: flex;
+  justify-content: space-around;
+}
+
+.artisan {
+  width: 30%;
+}
+
+.artisan img {
+  width: 100%;
+  border-radius: 40%;
+}
+
+.our-values {
+  padding: 4rem 0;
+}
+
+.our-values ul {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-values ul li {
+  width: 30%;
+}
+
+.customer-testimonials {
+  background-color: #f4f4f4;
+  padding: 4rem 0;
+}
+
+.customer-testimonials .testimonial {
+  margin-top: 3rem;
+}
+
+/*** about-us end ***/

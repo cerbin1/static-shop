@@ -94,4 +94,26 @@
     font-size: 1.5rem;
     margin: 0;
   }
+
+  .artisan-grid {
+    flex-direction: column;
+    padding: 0 0.5rem;
+  }
+
+  .artisan {
+    width: 100%;
+  }
+
+  .our-values ul {
+    flex-direction: column;
+    padding: 0 0.5rem;
+  }
+
+  .our-values ul li {
+    width: 100%;
+  }
+
+  .testimonial {
+    padding: 0 1rem;
+  }
 }
