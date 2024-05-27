@@ -217,12 +217,12 @@ nav {
   font-size: 3rem;
 }
 
-.hero-content p {
+.hero-content h2 {
   font-family: "Lato", sans-serif;
   font-size: 1.7rem;
   color: #4b3832;
-  font-weight: 600;
-  text-shadow: 1px 1px 1px #fffdd0;
+  font-weight: 700;
+  text-shadow: 1px 1px 1px #ffd700;
   padding-bottom: 1rem;
 }
 
