@@ -525,6 +525,10 @@ nav {
   color: #6699cc;
 }
 
+.reviews .review span.four-stars:after {
+  content: " \2605\2605\2605\2605";
+}
+
 .related-products .product-grid {
   display: flex;
 }
@@ -554,13 +558,17 @@ nav {
   margin: auto;
   overflow: hidden;
 }
+
 .carousel-slide {
   display: flex;
 }
+
 .carousel-slide img {
   width: 100%;
+  min-width: 100%;
   border: 1px solid #ddd;
 }
+
 .carousel-btn {
   position: absolute;
   top: 50%;
@@ -572,16 +580,20 @@ nav {
   cursor: pointer;
   transform: translateY(-50%);
 }
+
 .carousel-btn.prev {
   left: 0;
 }
+
 .carousel-btn.next {
   right: 0;
 }
+
 .carousel-dots {
   text-align: center;
   padding: 10px 0;
 }
+
 .carousel-dots span {
   cursor: pointer;
   height: 15px;
@@ -591,6 +603,7 @@ nav {
   border-radius: 50%;
   display: inline-block;
 }
+
 .carousel-dots .active {
   background-color: #717171;
 }
