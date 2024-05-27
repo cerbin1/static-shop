@@ -65,4 +65,33 @@
     width: 100%;
     max-width: 100%;
   }
+
+  .breadcrumb {
+    display: none;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .product-details h1 {
+    font-size: 1.5rem;
+  }
+
+  .reviews .container {
+    flex-direction: column;
+  }
+
+  .reviews .review {
+    margin: 0.5rem 0;
+  }
+
+  .related-products .product-grid {
+    flex-direction: column;
+  }
+
+  .product-grid .product-card h3 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
 }
