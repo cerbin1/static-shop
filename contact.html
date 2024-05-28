@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Crafted Treasures - About Us</title>
+    <title>Crafted Treasures - Products</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -49,102 +49,65 @@
       </div>
     </nav>
     <main>
-      <section id="hero" class="about-us-hero">
+      <section id="hero" class="contact-hero">
         <div class="container">
-          <h1>About Crafted Treasures</h1>
-          <p>Discover the Artistry Behind Every Piece</p>
+          <h1>Contact Us</h1>
+          <p>We'd love to hear from you!</p>
         </div>
       </section>
-      <section class="our-story">
+
+      <section class="contact-info">
         <div class="container">
-          <h2>Our Story</h2>
+          <h2>Contact Information</h2>
           <p>
-            Crafted Treasures began as a small endeavor by a group of passionate
-            artisans dedicated to creating unique, handmade pieces. Our mission
-            is to bring the beauty and authenticity of handcrafted goods to
-            people everywhere. Each item in our collection is a testament to the
-            skill and creativity of our artisans, crafted with love and care.
+            If you have any questions or would like more information about our
+            products, please feel free to reach out to us:
           </p>
-        </div>
-      </section>
-
-      <section class="meet-the-artisans">
-        <div class="container">
-          <h2>Meet the Artisans</h2>
-          <div class="artisan-grid">
-            <div class="artisan">
-              <img src="assets/images/artist.webp" alt="Artisan Name" />
-              <h3>Jeff</h3>
-              <p>
-                Jeff is a master jeweler with over 15 years of experience in
-                creating intricate handmade jewelry. His designs are inspired by
-                nature and he often incorporates elements such as leaves,
-                flowers, and gemstones into his pieces. Jeff's attention to
-                detail and passion for craftsmanship shine through in every
-                necklace, bracelet, and earring he creates.
-              </p>
-            </div>
-            <div class="artisan">
-              <img src="assets/images/artist.webp" alt="Artisan Name" />
-              <h3>Kamil Ślimak</h3>
-              <p>
-                Kamil is a skilled potter who has been working with clay for
-                over a decade. He specializes in creating unique pottery pieces
-                that are both functional and artistic. Kamil's work often
-                features bold colors and intricate patterns, and he enjoys
-                experimenting with new techniques to push the boundaries of his
-                craft.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="our-values">
-        <div class="container">
-          <h2>Our Values</h2>
           <ul>
             <li>
-              <h3>Quality</h3>
-              <p>
-                We prioritize quality in every piece we create, ensuring that
-                our customers receive only the best handcrafted items.
-              </p>
+              <strong>Address:</strong> 123 Craft Lane, Artisan City, AC 12345
             </li>
+            <li><strong>Phone:</strong> (123) 456-7890</li>
+            <li><strong>Email:</strong> info@craftedtreasures.com</li>
             <li>
-              <h3>Sustainability</h3>
-              <p>
-                We are committed to sustainable practices, using eco-friendly
-                materials and processes to minimize our environmental impact.
-              </p>
-            </li>
-            <li>
-              <h3>Community</h3>
-              <p>
-                We believe in supporting our community of artisans and
-                customers, fostering a culture of creativity and respect.
-              </p>
+              <strong>Business Hours:</strong> Monday - Friday, 9 AM - 5 PM
             </li>
           </ul>
         </div>
       </section>
 
-      <section class="customer-testimonials">
+      <section class="contact-form">
         <div class="container">
-          <h2>Customer Testimonials</h2>
-          <div class="testimonial">
-            <p>
-              "Crafted Treasures offers the most beautiful handmade items I've
-              ever seen. Each piece is unique and of exceptional quality." -
-              Sarah W.
-            </p>
-          </div>
-          <div class="testimonial">
-            <p>
-              "I love the personal touch in every product. You can tell a lot of
-              care and skill went into making them." - Jessica T.
-            </p>
-          </div>
+          <h2>Send Us a Message</h2>
+          <form action="" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button class="btn">Submit</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="map">
+        <div class="container">
+          <h2>Our Location</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1514867929684!2d-122.40136388468215!3d37.78799377975651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808b07e5e61d%3A0x22a01446f905bde7!2s123%20Craft%20Ln%2C%20San%20Francisco%2C%20CA%2094133%2C%20USA!5e0!3m2!1sen!2sus!4v1615374265573!5m2!1sen!2sus"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
         </div>
       </section>
 
@@ -213,6 +176,50 @@
         </article>
       </section>
     </main>
-    <script></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const prevBtn = document.querySelector(".carousel-btn.prev");
+        const nextBtn = document.querySelector(".carousel-btn.next");
+        const carouselSlide = document.querySelector(".carousel-slide");
+        const images = document.querySelectorAll(".carousel-slide img");
+        const dots = document.querySelectorAll(".dot");
+
+        let counter = 0;
+        const size = images[0].clientWidth;
+
+        function updateDots() {
+          dots.forEach((dot, index) => {
+            dot.classList.toggle("active", index === counter);
+          });
+        }
+
+        nextBtn.addEventListener("click", () => {
+          if (counter >= images.length - 1) return;
+          carouselSlide.style.transition = "transform 0.4s ease-in-out";
+          counter++;
+          carouselSlide.style.transform = `translateX(${-size * counter}px)`;
+          updateDots();
+        });
+
+        prevBtn.addEventListener("click", () => {
+          if (counter <= 0) return;
+          carouselSlide.style.transition = "transform 0.4s ease-in-out";
+          counter--;
+          carouselSlide.style.transform = `translateX(${-size * counter}px)`;
+          updateDots();
+        });
+
+        dots.forEach((dot, index) => {
+          dot.addEventListener("click", () => {
+            counter = index;
+            carouselSlide.style.transition = "transform 0.4s ease-in-out";
+            carouselSlide.style.transform = `translateX(${-size * counter}px)`;
+            updateDots();
+          });
+        });
+
+        updateDots();
+      });
+    </script>
   </body>
 </html>

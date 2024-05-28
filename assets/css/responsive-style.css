@@ -116,4 +116,13 @@
   .testimonial {
     padding: 0 1rem;
   }
+
+  .map iframe {
+    max-width: 100%;
+  }
+
+  .contact-info,
+  .contact-form {
+    padding: 0 0.5rem;
+  }
 }
