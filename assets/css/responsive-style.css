@@ -129,4 +129,39 @@
   .faq {
     padding: 4rem 0.5rem;
   }
+
+  .cart {
+    padding: 0 0 2rem 0;
+  }
+
+  .cart-table thead {
+    display: none;
+  }
+
+  .cart-table,
+  .cart-table tbody,
+  .cart-table tr,
+  .cart-table td {
+    display: block;
+  }
+
+  .cart-table tr {
+    margin-bottom: 15px;
+  }
+
+  .cart-table td span {
+    display: block;
+  }
+
+  .cart-table td img {
+    margin: 0;
+  }
+
+  .cart-summary {
+    text-align: center;
+  }
+
+  .cart-summary button {
+    margin-top: 1rem;
+  }
 }
