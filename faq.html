@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head> <section class="search-hero">
+        <div class="container">
+            <h1>Search Results</h1>
+            <form action="search.html" method="GET">
+                <input type="text" name="query" placeholder="Search for products..." value="Necklace">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </section>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crafted Treasures - FAQ</title>
@@ -24,6 +32,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
+    <!-- Javascript -->
+    <script src="assets/js/script.js"></script>
   </head>
   <body>
     <nav>
@@ -40,6 +51,7 @@
         </div>
         <div class="navbar-search-bar">
           <input
+            id="search"
             class="search-bar"
             placeholder="Search for products"
             type="text"
@@ -167,50 +179,5 @@
         </article>
       </section>
     </main>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const prevBtn = document.querySelector(".carousel-btn.prev");
-        const nextBtn = document.querySelector(".carousel-btn.next");
-        const carouselSlide = document.querySelector(".carousel-slide");
-        const images = document.querySelectorAll(".carousel-slide img");
-        const dots = document.querySelectorAll(".dot");
-
-        let counter = 0;
-        const size = images[0].clientWidth;
-
-        function updateDots() {
-          dots.forEach((dot, index) => {
-            dot.classList.toggle("active", index === counter);
-          });
-        }
-
-        nextBtn.addEventListener("click", () => {
-          if (counter >= images.length - 1) return;
-          carouselSlide.style.transition = "transform 0.4s ease-in-out";
-          counter++;
-          carouselSlide.style.transform = `translateX(${-size * counter}px)`;
-          updateDots();
-        });
-
-        prevBtn.addEventListener("click", () => {
-          if (counter <= 0) return;
-          carouselSlide.style.transition = "transform 0.4s ease-in-out";
-          counter--;
-          carouselSlide.style.transform = `translateX(${-size * counter}px)`;
-          updateDots();
-        });
-
-        dots.forEach((dot, index) => {
-          dot.addEventListener("click", () => {
-            counter = index;
-            carouselSlide.style.transition = "transform 0.4s ease-in-out";
-            carouselSlide.style.transform = `translateX(${-size * counter}px)`;
-            updateDots();
-          });
-        });
-
-        updateDots();
-      });
-    </script>
   </body>
 </html>
