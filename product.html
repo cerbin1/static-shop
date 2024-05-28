@@ -115,7 +115,8 @@
                 <option value="5">5</option>
               </select>
             </div>
-            <a class="btn">Add to Cart</a>
+            <a id="add-to-cart-button" class="btn">Add to Cart</a>
+            <div id="toast" class="toast">Item added to cart!</div>
           </div>
         </div>
       </section>
@@ -306,6 +307,16 @@
         });
 
         updateDots();
+
+        document
+          .getElementById("add-to-cart-button")
+          .addEventListener("click", () => {
+            var toast = document.getElementById("toast");
+            toast.className = "toast show";
+            setTimeout(function () {
+              toast.className = toast.className.replace("show", "");
+            }, 3000);
+          });
       });
     </script>
   </body>

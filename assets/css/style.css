@@ -789,3 +789,45 @@ nav {
   color: #666;
 }
 /*** faq end ***/
+
+.toast {
+  visibility: hidden;
+  max-width: 50%;
+  margin: 0 auto;
+  background-color: #6699cc;
+  color: #ffd700;
+  border-radius: 5px;
+  padding: 1rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  bottom: 2rem;
+}
+
+.toast.show {
+  visibility: visible;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
