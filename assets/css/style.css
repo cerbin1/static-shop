@@ -170,10 +170,10 @@ nav {
   font-size: 2rem;
 }
 
-.social-icons img {
+/* .social-icons img {
   width: 24px;
   height: 24px;
-}
+} */
 
 .footer-bottom {
   border-top: 1px solid #d3d3d3;
@@ -706,6 +706,31 @@ nav {
 
 .contact-info ul li {
   margin: 1rem 0;
+}
+
+.social-icons-container {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons-container {
+  list-style: none;
+  padding: 0;
+}
+
+.social-icons-container li {
+  font-size: 3rem;
+  padding: 0 2rem;
+}
+
+.social-icons-container li a {
+  color: #4b3832;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons-container li a:hover {
+  color: #e2725b;
 }
 
 .contact-form {
