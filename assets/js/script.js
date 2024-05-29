@@ -9,6 +9,11 @@ document.addEventListener("DOMContentLoaded", function () {
     .addEventListener("click", () => {
       imitateProductSearching();
     });
+
+  document.getElementsByClassName("navbar-cart")[0]
+    .addEventListener("click", () => {
+      window.location.replace("cart.html");
+    });
 });
 
 function imitateProductSearching() {
